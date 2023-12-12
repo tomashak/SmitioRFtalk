@@ -1,0 +1,9 @@
+ID,Priority,Name,Description,Test Steps.Action,Arguments,Test Steps.Expected result
+ID of suite,high,SmitioTest,,-,-,-
+123,normal,SmitioTest.Verify Addition Result,Test verifies the correctness of the addition operation.,Add Numbers,"['10', '5']",PASS: / FAIL:
+,,,,BuiltIn.Evaluate,['${num1} + ${num2}'],PASS: / FAIL:
+,,,,BuiltIn.Should Be Equal As Numbers,"['${result}', '15']",PASS: / FAIL:
+124,normal,SmitioTest.Check List Length,Test checks if the length of the list is as expected.,BuiltIn.Create List,"['Item1', 'Item2', 'Item3']",PASS: / FAIL:
+,,,,Get List Length,['${my_list}'],PASS: / FAIL:
+,,,,BuiltIn.Get Length,['${input_list}'],PASS: / FAIL:
+,,,,BuiltIn.Should Be Equal As Numbers,"['${length}', '3']",PASS: / FAIL:

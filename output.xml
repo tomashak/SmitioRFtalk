@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.1 on win32)" generated="20231212 17:07:21.169" rpa="false" schemaversion="4">
+<suite id="s1" name="SmitioTest" source="C:\_GIT\SmitioRFtalk\SmitioTest.robot">
+<test id="s1-t1" name="Excel to Json" line="53">
+<kw name="Excel To Json Convertor" library="excel_to_json_convertor">
+<var>${excel_json}</var>
+<arg>Data/input.xls</arg>
+<msg timestamp="20231212 17:07:38.793" level="INFO">${excel_json} = [{'hotel': 'Iberotel Costa Mares', 'url': 'https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/', 'termin satur': '08/09/2023', 'terminovy posun': -2, 'pocet noci': 7, 'PAX': '2+0', 'stra...</msg>
+<status status="PASS" starttime="20231212 17:07:38.234" endtime="20231212 17:07:38.794"/>
+</kw>
+<tag>excel</tag>
+<status status="PASS" starttime="20231212 17:07:38.231" endtime="20231212 17:07:38.809"/>
+</test>
+<doc>Lorem ipsum</doc>
+<meta name="Author">Tomas Hak</meta>
+<meta name="Confluence">https://confluence.company.cz/namepage</meta>
+<meta name="Priority">High</meta>
+<status status="PASS" starttime="20231212 17:07:21.210" endtime="20231212 17:07:38.835"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">excel</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="SmitioTest">SmitioTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
