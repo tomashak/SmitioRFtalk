@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.1 on win32)" generated="20231212 13:36:53.990" rpa="false" schemaversion="4">
+<suite id="s1" name="SmitioTest" source="C:\_GIT\SmitioRFtalk\SmitioTest.robot">
+<test id="s1-t1" name="Excel to excel_to_json_convertor" line="26">
+<kw name="Excel To Json Convertor" library="excel_to_json_convertor">
+<var>${excel_json}</var>
+<arg>excel_file_path=Data/input.xls</arg>
+<msg timestamp="20231212 13:36:54.932" level="INFO">${excel_json} = [{'hotel': 'Iberotel Costa Mares', 'url': 'https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/', 'termin satur': '08/09/2023', 'terminovy posun': -2, 'pocet noci': 7, 'PAX': '2+0', 'stra...</msg>
+<status status="PASS" starttime="20231212 13:36:54.897" endtime="20231212 13:36:54.932"/>
+</kw>
+<kw name="Convert Json To String" library="JSONLibrary">
+<var>${excel_string}</var>
+<arg>${excel_json}</arg>
+<doc>Convert JSON object to string</doc>
+<msg timestamp="20231212 13:36:54.933" level="INFO">${excel_string} = [{"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "08/09/2023", "terminovy posun": -2, "pocet noci": 7, "PAX": "2+0", "stra...</msg>
+<status status="PASS" starttime="20231212 13:36:54.933" endtime="20231212 13:36:54.933"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${excel_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231212 13:36:54.934" level="INFO">[{"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "08/09/2023", "terminovy posun": -2, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 1, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "08/09/2023", "terminovy posun": 1, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 1, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "13/10/2023", "terminovy posun": 1, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 1, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "20/10/2023", "terminovy posun": -2, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 1, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "25/08/2023", "terminovy posun": 1, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "01/09/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "08/09/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "15/09/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "22/09/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "29/09/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "06/10/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "13/10/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "20/10/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}, {"hotel": "Iberotel Costa Mares", "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/", "termin satur": "27/10/2023", "terminovy posun": 0, "pocet noci": 7, "PAX": "2+0", "strava": "All Inclusive", "odlet": "VIE", "tuzemske CK": 0, "max pocet vysledkov": 2}]</msg>
+<status status="PASS" starttime="20231212 13:36:54.934" endtime="20231212 13:36:54.934"/>
+</kw>
+<kw name="Pretty Print Json" library="jsonLibrary">
+<arg>${excel_string}</arg>
+<doc>This creates a keyword named "pretty print json". This keyword takes one argument, which is a json string. It prints to output log (pretty format)</doc>
+<msg timestamp="20231212 13:36:54.936" level="INFO">[
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "08/09/2023",
+        "terminovy posun": -2,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 1,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "08/09/2023",
+        "terminovy posun": 1,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 1,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "13/10/2023",
+        "terminovy posun": 1,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 1,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "20/10/2023",
+        "terminovy posun": -2,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 1,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "25/08/2023",
+        "terminovy posun": 1,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "01/09/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "08/09/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "15/09/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "22/09/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "29/09/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "06/10/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "13/10/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "20/10/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    },
+    {
+        "hotel": "Iberotel Costa Mares",
+        "url": "https://www.invia.sk/hotel/egypt/marsa-alam/iberotel-costa-mares/",
+        "termin satur": "27/10/2023",
+        "terminovy posun": 0,
+        "pocet noci": 7,
+        "PAX": "2+0",
+        "strava": "All Inclusive",
+        "odlet": "VIE",
+        "tuzemske CK": 0,
+        "max pocet vysledkov": 2
+    }
+]</msg>
+<status status="PASS" starttime="20231212 13:36:54.935" endtime="20231212 13:36:54.936"/>
+</kw>
+<tag>excel</tag>
+<tag>sss</tag>
+<status status="PASS" starttime="20231212 13:36:54.896" endtime="20231212 13:36:54.936"/>
+</test>
+<status status="PASS" starttime="20231212 13:36:53.993" endtime="20231212 13:36:54.939"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">excel</stat>
+<stat pass="1" fail="0" skip="0">sss</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="SmitioTest">SmitioTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

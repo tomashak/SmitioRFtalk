@@ -1,0 +1,11 @@
+isConfirmed: False
+stLocation: finalDestination
+# Parameters
+Param_dict:
+  abc_array: [0, 0, 3]
+  abc_int: 96
+# data example:
+length_list: [6000, 6000, 6000]
+length_residual_road: 15000
+generic_type: [0, 0, 0]
+mean_velocity: [30, 30, 30]
